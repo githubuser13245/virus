@@ -1,4 +1,4 @@
-let profileImage='62de5c21909597c2a2bfa739';
+/**let profileImage='62de5c21909597c2a2bfa739';
 if(Math.floor(Math.random() * 2))
 {
     profileImage='62de5caa909597c2a2bfa76a';
@@ -9,7 +9,7 @@ fetch("https://playentry.org/graphql", {
   },
   "body": `{\"query\":\"\\n    mutation UPDATE_USERINFO (\\n        $profileImage: String, \\n        $coverImage: String, \\n        $description: String,\\n        $nickname: String,\\n        $gender: String\\n        $mobileKey: String\\n    ) {\\n        updateUserInfo(\\n            profileImage: $profileImage, \\n            coverImage: $coverImage, \\n            description: $description\\n            nickname: $nickname\\n            gender: $gender\\n            mobileKey: $mobileKey\\n        ) {\\n            \\n    status\\n    result\\n\\n        }\\n    }\\n\",\"variables\":{\"profileImage\":\"${profileImage}"}}`,
   "method": "POST"
-});
+});**/
 
 let userinfo = ['운영자님 존경합니다!', '운영자님 사랑해요!', '운영자님 오늘도 파이팅!', '운영자님 대단하세요!'];
 let userinfodata = userinfo[Math.floor(Math.random() * 4)];
